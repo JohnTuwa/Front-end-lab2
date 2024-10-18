@@ -37,11 +37,9 @@ header, #top, #left, #right {
     overflow-x: hidden;
     overflow-y: auto;
 }
-
 .sides{
     width: 12vw;
 }
-
 #logo{
     border: black solid 1px;
     margin-left: 20px;
