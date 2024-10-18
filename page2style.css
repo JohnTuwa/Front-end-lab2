@@ -1,0 +1,146 @@
+header{
+    border: 1px solid black;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+header > button{
+    width: 120px;
+}
+footer{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+header, div, footer{
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+img{
+    height: 100%;
+    width: auto;
+    float: right;
+    margin: 0;
+}
+button:hover{
+    cursor: pointer;
+}
+a:link{
+    text-decoration: none;
+}
+a{
+    color: brown;
+}
+a:hover{
+    text-decoration: underline;
+}
+hr{
+    border-top: 1px solid black;
+}
+.logo{
+    border: black solid 1px;
+    margin-left: 20px;
+    padding: 5px 45px 5px 45px;
+    font-size: 40px;
+    border-radius: 4px;
+}
+footer > .logo{
+    height: 55px;
+}
+.first-container{
+    height: 500px;
+    font-size: 32px;
+}
+.first-container > article{
+    padding: 20px;
+}
+.buttons{
+    width: 350px;
+    height: 60px;
+}
+.second-container{
+    height: 600px;
+    background-image: url("https://leatheradventure.com/wp-content/uploads/2020/02/Workshop-1024x768.jpg");
+    background-size: contain;
+    display: grid;
+    grid-template-areas:
+    'ar1  ar2 ar3'
+    'empt but empt2';
+    grid-template-rows: 1fr 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.left-article{
+    grid-area: ar1;
+    justify-self: end;
+}
+.center-article{
+    grid-area: ar2;
+    justify-self: center;
+}
+.right-article{
+    grid-area: ar3;
+}
+.item{
+    background-color: white;
+    border: 1px solid black;
+    width: 320px;
+    height: 80%;
+    align-self: center;
+    padding: 10px;
+}
+.second-container > button{
+    grid-area: but;
+    justify-self: center;
+    align-self: flex-start;
+}
+.second-container > article{
+    border: 1px solid black;
+}
+.third-container{
+    height: 700px;
+    display: grid;
+    grid-template-areas:
+    'top  top  top'
+    'one  two  three'
+    'four five 0'
+    'empt but empt2';
+    grid-template-rows: 0.20fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.third-container > b{
+    font-size: 50px;
+    grid-area: top;
+    justify-self: center;
+}
+.first-art{
+    grid-area: one;
+    justify-self: end;
+}
+.second-art{
+    grid-area: two;
+    justify-self: center;
+}
+.third-art{
+    grid-area: three;
+}
+.fourth-art{
+    grid-area: four;
+    justify-self: end;
+}
+.fifth-art{
+    grid-area: five;
+    justify-self: center;
+}
+.third-container > button{
+    grid-area: but;
+    justify-self: center;
+    align-self: start;
+}
+.number{
+    font-size: 75px;
+    margin-right: 14px;
+    float: left;
+}
