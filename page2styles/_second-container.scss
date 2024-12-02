@@ -1,0 +1,31 @@
+.second-container{
+  height: 600px;
+  background-image: url("https://leatheradventure.com/wp-content/uploads/2020/02/Workshop-1024x768.jpg");
+  background-size: contain;
+  display: grid;
+  grid-template-areas:
+    'ar1  ar2 ar3'
+    'empt but empt2';
+  grid-template-rows: 1fr 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  > button{
+    grid-area: but;
+    justify-self: center;
+    align-self: flex-start;
+  }
+  > article{
+    border: 1px solid black;
+  }
+}
+.left-article{
+  grid-area: ar1;
+  justify-self: end;
+}
+.center-article{
+  grid-area: ar2;
+  justify-self: center;
+}
+.right-article{
+  grid-area: ar3;
+}

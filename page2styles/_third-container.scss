@@ -1,0 +1,46 @@
+.third-container{
+  height: 700px;
+  display: grid;
+  grid-template-areas:
+    'top  top  top'
+    'one  two  three'
+    'four five 0'
+    'empt but empt2';
+  grid-template-rows: 0.20fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  > b{
+    font-size: 50px;
+    grid-area: top;
+    justify-self: center;
+  }
+  > button{
+    grid-area: but;
+    justify-self: center;
+    align-self: start;
+  }
+}
+.first-art{
+  grid-area: one;
+  justify-self: end;
+}
+.second-art{
+  grid-area: two;
+  justify-self: center;
+}
+.third-art{
+  grid-area: three;
+}
+.fourth-art{
+  grid-area: four;
+  justify-self: end;
+}
+.fifth-art{
+  grid-area: five;
+  justify-self: center;
+}
+.number{
+  font-size: 75px;
+  margin-right: 14px;
+  float: left;
+}

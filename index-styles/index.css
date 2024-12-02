@@ -1,0 +1,69 @@
+header {
+  padding: 14px;
+}
+div {
+  padding: 20px;
+}
+a {
+  color: #a52a2a;
+}
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.top-link {
+  margin: 80px;
+}
+img {
+  width: 100%;
+}
+#top {
+  margin: 10px 0;
+  text-align: center;
+}
+#left,
+#center,
+#right {
+  float: left;
+}
+header,
+#top,
+#left,
+#right {
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+#center {
+  width: 60vw;
+  height: 500px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.sides {
+  width: 12vw;
+}
+#logo {
+  border: #000 solid 1px;
+  margin-left: 20px;
+  padding: 5px 45px 5px 45px;
+  font-size: 40px;
+  border-radius: 4px;
+}
+#search,
+#search-button {
+  float: right;
+}
+#search {
+  height: 40px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+#search-button {
+  margin-right: 20px;
+  height: 45px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}

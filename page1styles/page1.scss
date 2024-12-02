@@ -1,0 +1,43 @@
+@import "../globalVars.scss";
+@import "./_main-container.scss";
+
+header{
+  display: flex;
+  justify-content: space-evenly;
+  border: $stBorder;
+  padding: 5px;
+  gap: 1em;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+button:hover{
+  cursor: pointer;
+}
+header, .main-container{
+  max-width: $maxW;
+  margin-left: auto;
+  margin-right: auto;
+}
+.category-name{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+label{
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.logo{
+  @include logo();
+}
+.search{
+  flex-grow: 1;
+}
+.search-button{
+  padding: 20px;
+  margin-right:15px;
+}
+.cart-button{
+  padding: 20px;
+}

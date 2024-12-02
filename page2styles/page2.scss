@@ -1,0 +1,52 @@
+@import "../globalVars.scss";
+@import "./_first-container.scss";
+@import "./_second-container.scss";
+@import "./_third-container.scss";
+
+header{
+  border: $stBorder;
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  > button{
+    width: 120px;
+  }
+}
+footer{
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  .logo{
+    height: 55px;
+  }
+}
+header, div, footer{
+  max-width: $maxW;
+  margin-left: auto;
+  margin-right: auto;
+}
+img{
+  height: 500px;
+  width: auto;
+  margin: 0;
+}
+button:hover{
+  cursor: pointer;
+}
+a{
+  @include def-a();
+}
+hr{
+  border-top: $stBorder;
+}
+.logo{
+  @include logo();
+}
+.item{
+  background-color: white;
+  border: $stBorder;
+  width: 320px;
+  height: 80%;
+  align-self: center;
+  padding: 10px;
+}

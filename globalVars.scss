@@ -1,0 +1,23 @@
+$stBorder : 1px solid black;
+$aColor : brown;
+$aLink : none;
+$aHover : underline;
+$maxW : 1920px;
+
+@mixin logo{
+  border: $stBorder;
+  margin-left: 20px;
+  padding: 5px 45px 5px 45px;
+  font-size: 40px;
+  border-radius: 4px;
+}
+
+@mixin def-a{
+  color: $aColor;
+  &:link{
+    text-decoration: $aLink;
+  }
+  &:hover{
+    text-decoration: $aHover;
+  }
+}

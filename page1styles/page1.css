@@ -1,0 +1,97 @@
+.main-container {
+  padding: 15px;
+  height: auto;
+  display: flex;
+  gap: 2em;
+}
+
+.categories {
+  border: 1px solid black;
+  width: 30%;
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.goods {
+  width: 200px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.goods-description {
+  border: 0;
+  display: flex;
+  gap: 15px;
+  justify-content: space-around;
+}
+
+.buy-button {
+  padding: 10px;
+  max-height: 40px;
+  align-self: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid black;
+  padding: 5px;
+  gap: 1em;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+header, .main-container {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.category-name {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+label {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.logo {
+  border: 1px solid black;
+  margin-left: 20px;
+  padding: 5px 45px 5px 45px;
+  font-size: 40px;
+  border-radius: 4px;
+}
+
+.search {
+  flex-grow: 1;
+}
+
+.search-button {
+  padding: 20px;
+  margin-right: 15px;
+}
+
+.cart-button {
+  padding: 20px;
+}
+
+/*# sourceMappingURL=page1.css.map */
